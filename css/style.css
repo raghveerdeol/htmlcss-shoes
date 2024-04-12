@@ -5,12 +5,17 @@
 }
 main{
     height: 100vh;
-    overflow: scroll;
 }
 .box{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+article > img{
+    width: 43%;
+}
 .red{
     background-color: #ff0000;
 }
@@ -19,13 +24,4 @@ main{
 }
 .yellow{
     background-color: #ffff00;
-}
-main > div{
-    position: relative;
-}
-div > article{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
