@@ -3,6 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+header > ul{
+    position: fixed;
+    right: 3rem;
+    top: 2rem;
+    list-style: none;
+    display: flex;
+}
+header > ul > li{
+    padding: 1rem;
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 8%;
+
+}
+li > a{
+    text-decoration: none;
+    width: 18px;
+    text-align: center;
+}
+li:hover {
+    background-color: blue;
+    color: white;
+}
 main{
     height: 100vh;
 }
@@ -15,6 +40,13 @@ main{
 }
 article > img{
     width: 43%;
+}
+article.red > h1,
+article.green > h1{
+    color: #fffc00;
+}
+article.yellow > h1{
+    color: #008000;
 }
 .red{
     background-color: #ff0000;
